@@ -1,5 +1,5 @@
-OpenNMS-Config-Cleaner
-======================
+OpenNMS Service Configuration Audit
+===================================
 
 This tool helps to analyze and validate configuration for the following OpenNMS components:
 - Pollerd
