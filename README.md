@@ -16,7 +16,7 @@ Given information help to understand the configuration for possible issues your 
 
 Issues:
 =========================
-The tool is maintained in JIRA of the OpenNMS project which you can find here: http://issues.opennms.org/browse/OSCV
+The tool is maintained in JIRA of the OpenNMS project which you can find here: http://issues.opennms.org/browse/OSCA
 
 Requirements:
 =============
