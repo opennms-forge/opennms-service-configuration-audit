@@ -6,12 +6,14 @@
 
     <groupId>org.opennms.forge</groupId>
     <artifactId>serviceconfigurationaudit</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <name>OpenNMS Service Configuration Audit</name>
+    <url>https://github.com/opennms-forge/opennms-service-configuration-audit</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <opennmsVersion>1.12.6</opennmsVersion>
     </properties>
 
     <dependencies>
@@ -19,21 +21,19 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.5</version>
-            <type>jar</type>
+            <version>1.7.7</version>
         </dependency>
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.0.13</version>
-            <type>jar</type>
+            <version>1.1.2</version>
         </dependency>
 
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>15.0</version>
+            <version>17.0</version>
         </dependency>
 
         <dependency>
@@ -45,13 +45,13 @@
         <dependency>
             <groupId>org.opennms</groupId>
             <artifactId>opennms-provision-persistence</artifactId>
-            <version>1.12.3</version>
+            <version>${opennmsVersion}</version>
         </dependency>
 
         <dependency>
             <groupId>org.opennms</groupId>
             <artifactId>opennms-config-model</artifactId>
-            <version>1.12.3</version>
+            <version>${opennmsVersion}</version>
         </dependency>
 
         <dependency>
@@ -60,6 +60,7 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+        
     </dependencies>
 
     <build>
@@ -110,8 +111,6 @@
             <id>opennms-release</id>
             <name>OpenNMS Release Maven Repository</name>
             <url>http://maven.opennms.org/content/groups/opennms.org-release</url>
-        </repository>
-        
+        </repository>    
     </repositories>
-
 </project>
