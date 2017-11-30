@@ -1,7 +1,7 @@
-package org.opennms.forge.serviceconfigurationaudit;
+package org.opennms.forge.configuration.audit;
 
 import java.util.Map;
-import org.opennms.forge.serviceconfigurationaudit.model.NotificationCompound;
+import org.opennms.forge.configuration.audit.model.NotificationCompound;
 
 class NotificationCommandChecker {
 

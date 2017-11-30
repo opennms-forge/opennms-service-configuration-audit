@@ -1,8 +1,10 @@
-package org.opennms.forge.serviceconfigurationaudit.renderer;
+package org.opennms.forge.configuration.audit.renderer;
 
 import java.util.Map;
+
+import org.opennms.forge.configuration.audit.model.ServiceCompound;
+
 import jxl.write.WriteException;
-import org.opennms.forge.serviceconfigurationaudit.model.ServiceCompound;
 
 public class ServiceCompoundsRendererTabOutput {
 

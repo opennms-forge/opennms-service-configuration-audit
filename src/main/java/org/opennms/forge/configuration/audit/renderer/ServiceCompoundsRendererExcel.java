@@ -1,16 +1,18 @@
-package org.opennms.forge.serviceconfigurationaudit.renderer;
+package org.opennms.forge.configuration.audit.renderer;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
+
+import org.opennms.forge.configuration.audit.model.ServiceCompound;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import jxl.Workbook;
 import jxl.write.Label;
 import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
-import org.opennms.forge.serviceconfigurationaudit.model.ServiceCompound;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ServiceCompoundsRendererExcel {
     private final static String TABEL_HEADER = "\tPollerConfiguration\t\t\tDatacollection\t\t\tRequisitions\t\nService Name\tDefinition\tClass\tProblems\tDefinition\tClass\tProblems\tForced\tDetector\tUsed\tProblems";

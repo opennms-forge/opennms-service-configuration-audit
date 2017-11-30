@@ -1,12 +1,12 @@
-package org.opennms.forge.serviceconfigurationaudit;
+package org.opennms.forge.configuration.audit;
 
 import java.io.File;
 import java.util.Map;
 import java.util.TreeMap;
-import org.opennms.forge.serviceconfigurationaudit.model.NotificationCompound;
-import org.opennms.forge.serviceconfigurationaudit.model.ServiceCompound;
-import org.opennms.forge.serviceconfigurationaudit.renderer.ServiceCompoundsRendererExcel;
-import org.opennms.forge.serviceconfigurationaudit.renderer.ServiceCompoundsRendererTabOutput;
+import org.opennms.forge.configuration.audit.model.NotificationCompound;
+import org.opennms.forge.configuration.audit.model.ServiceCompound;
+import org.opennms.forge.configuration.audit.renderer.ServiceCompoundsRendererExcel;
+import org.opennms.forge.configuration.audit.renderer.ServiceCompoundsRendererTabOutput;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

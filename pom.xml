@@ -4,16 +4,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.opennms.forge</groupId>
-    <artifactId>serviceconfigurationaudit</artifactId>
+    <groupId>org.opennms.forge.configuration</groupId>
+    <artifactId>audit</artifactId>
     <version>1.0</version>
 
-    <name>OpenNMS Service Configuration Audit</name>
+    <name>OpenNMS Configuration Audit</name>
     <url>https://github.com/opennms-forge/opennms-service-configuration-audit</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.version>2.5.1</maven.compiler.version>
         <opennmsVersion>1.12.6</opennmsVersion>
+        <slf4j-api.version>1.7.7</slf4j-api.version>
+        <ch.qos.logback.version>1.1.2</ch.qos.logback.version>
+        <guava.version>21.0</guava.version>
+        <jxl.version>2.6.12</jxl.version>
+        <junit.version>4.12</junit.version>
     </properties>
 
     <dependencies>
@@ -21,25 +28,25 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.7</version>
+            <version>${slf4j-api.version}</version>
         </dependency>
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.1.2</version>
+            <version>${ch.qos.logback.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>17.0</version>
+            <version>${guava.version}</version>
         </dependency>
 
         <dependency>
             <groupId>net.sourceforge.jexcelapi</groupId>
             <artifactId>jxl</artifactId>
-            <version>2.6.12</version>
+            <version>${jxl.version}</version>
         </dependency>
 
         <dependency>
@@ -57,7 +64,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         
@@ -68,10 +75,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.5.1</version>
+                <version>${maven.compiler.version}</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -79,7 +86,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.opennms.forge.serviceconfigurationaudit.Starter</mainClass>
+                            <mainClass>org.opennms.forge.configuration.audit.Starter</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

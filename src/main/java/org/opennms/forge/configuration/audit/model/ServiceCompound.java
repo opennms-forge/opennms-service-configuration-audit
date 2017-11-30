@@ -1,4 +1,4 @@
-package org.opennms.forge.serviceconfigurationaudit.model;
+package org.opennms.forge.configuration.audit.model;
 
 import java.util.Objects;
 import org.opennms.netmgt.config.collectd.Collector;

@@ -1,4 +1,4 @@
-package org.opennms.forge.serviceconfigurationaudit;
+package org.opennms.forge.configuration.audit;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Map;
 import org.exolab.castor.xml.MarshalException;
 import org.exolab.castor.xml.ValidationException;
-import org.opennms.forge.serviceconfigurationaudit.model.ServiceCompound;
+import org.opennms.forge.configuration.audit.model.ServiceCompound;
 import org.opennms.netmgt.config.CollectdConfig;
 import org.opennms.netmgt.config.CollectdConfigFactory;
 import org.opennms.netmgt.config.CollectdPackage;

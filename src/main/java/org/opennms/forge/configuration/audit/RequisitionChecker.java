@@ -1,11 +1,11 @@
-package org.opennms.forge.serviceconfigurationaudit;
+package org.opennms.forge.configuration.audit;
 
 import java.io.File;
 import java.util.Map;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
-import org.opennms.forge.serviceconfigurationaudit.model.ServiceCompound;
+import org.opennms.forge.configuration.audit.model.ServiceCompound;
 import org.opennms.netmgt.provision.persist.foreignsource.ForeignSource;
 import org.opennms.netmgt.provision.persist.foreignsource.PluginConfig;
 import org.opennms.netmgt.provision.persist.requisition.Requisition;
